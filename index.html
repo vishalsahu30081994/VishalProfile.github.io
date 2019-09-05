@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1HOME.HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-5.8.2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="NAVBAR_NEW.css">
+    <style>
+        /**{*/
+        /*padding: 0;*/
+        /*margin: 0;*/
+        /*!*font-family: 'Cardo', serif;*!*/
+        /*}*/
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url("pexels-photo-1308624.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial;
+            color: white;
+        }
+        .backimg{
+            width: 100%;
+            height: 100vh;
+            background-image: url("pexels-photo-1308624.jpeg");
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .profile{
+            width: 400px;
+            background-color: rgba(0,0,0,0.3);
+            padding: 30px 0;
+            border-radius: 10px;
+        }
+        img{
+            height: 250px;
+            border-radius: 70%;
+            margin-bottom: 20px;
+        }
+        .profileText{
+            margin-bottom: 20px;
+        }
+        .profileText h2{
+            font-size: 2em;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        .profileText h3{
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        i{
+            color: white;
+        }
+        .profilefont a i{
+            color: white;
+        }
+        /*.main-foot{*/
+        /*background-image: url("pexels-photo-1308624.jpeg");*/
+        /*text-align: center;*/
+        /*color: white;*/
+        /*padding: 10px;*/
+        /*font-size: 20px;*/
+        /*!*margin: 0 0 15px;*!*/
+        /*}*/
+        /*!* ------------------- Main Header ---------------- *!*/
+        /*.main-header{*/
+        /*background: url("pexels-photo-1308624.jpeg") no-repeat scroll center;*/
+        /*padding: 12px;*/
+        /*color: white;*/
+        /*text-align: right;*/
+        /*}*/
+        /*!*NAVBAR*!*/
+        /*nav{*/
+        /*background-color: black;*/
+        /*color: white;*/
+        /*overflow: hidden;*/
+        /*padding: 10px;*/
+        /*margin: 0px;*/
+        /*}*/
+        /*nav ul{*/
+        /*list-style: none;*/
+        /*padding: 0;*/
+        /*margin: 0;*/
+        /*}*/
+        /*nav ul li{*/
+        /*float: left;*/
+        /*}*/
+        /*nav ul li a{*/
+        /*text-decoration: none;*/
+        /*color: white;*/
+        /*padding: 14px 25px;*/
+        /*display: inline-block;*/
+        /*}*/
+        /*nav ul li a:hover{*/
+        /*background-color: blue;*/
+        /*color: white;*/
+        /*}*/
+        /*.dropdown_list{*/
+        /*background-color: black;*/
+        /*position: absolute;*/
+        /*display: none; !*to hide gone *!*/
+        /*}*/
+        /*.dropdown_list a{*/
+        /*display: block;*/
+        /*}*/
+
+        /*.main-footer{*/
+        /*background-image: url("pexels-photo-1308624.jpeg");*/
+        /*text-align: center;*/
+        /*color: white;*/
+        /*padding: 10px;*/
+        /*font-size: 20px;*/
+        /*!*margin: 0 0 15px;*!*/
+        /*}*/
+
+        /*SocalMEdiaIcon*/
+        .icon{
+            /*border: 2px solid black;*/
+            position: fixed;
+            top: 30%;
+            left: 0%;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        .icon a{
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            font-size: 22px;
+            font-family: 'oswald',SansSerif;
+            margin: 2px;
+            text-align: right;
+            border-radius: 0px 50px 50px 0px;
+            transform: translate(-130px,0px);
+            transition: all 1s;
+        }
+        .icon a:hover{
+            transform: translate(0px);
+        }
+        .icon a i{
+            margin-left: 25px;
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            color: black;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50px;
+            transition: all 0.5s;
+        }
+        .icon a:hover i{
+            transform: rotate(360deg);
+        }
+        .icon a i.fa-facebook{
+            color: #2c80D3;
+        }
+        .icon a i.fa-instagram{
+            color: #be6347;
+        }
+        .icon a i.fa-google-plus{
+            color: lightgray;
+        }
+        .icon a i.fa-youtube{
+            color: #fa0910;
+        }
+        .icon a i.fa-twitter{
+            color:#53c5ff;
+        }
+        .icon a i.fa-linkedin{
+            color: lightskyblue;
+        }
+        .facebook{
+            background-color: #2c80D3;
+            color: white;
+        }
+        .youtube{
+            background-color: #fa0910;
+            color: white;
+        }
+        .twitter{
+            background-color: #53c5ff;
+            color: white;
+        }
+        .Instra{
+            background-color: #be6347;
+            color: white;
+        }
+        .Google{
+            background-color: lightgray;
+            color: white;
+        }
+        .Linkedin{
+            background-color: lightskyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Main Header -->
+<header class="main-header">
+    <h1 class="animated slideInRight">The Great Profile</h1>
+</header>
+
+<!-- Main Navbar -->
+<nav class="main-nav">
+    <div class="animated slideInLeft">
+        <a href="index.html" class="active">
+            <i class="fa fa-home"></i> Home</a>
+        <a href="About.html">
+            <i class="fa fa-credit-card"></i> About Us</a>
+        <a href="1.Gallery.html">
+            <i class="fa fa-music"></i> Gallery</a>
+        <a href="1GAME'S.html">
+            <i class="fa fa-id-card"></i> Game's</a>
+        <a href="Contact.html">
+            <i class="fa fa-envelope"></i> Contact Us</a>
+    </div>
+</nav>
+<!--AND NAVBAR-->
+
+<!--SOCAL MEDIA ICON-->
+<div class="icon">
+    <a href="https://www.facebook.com/profile.php?id=100005320203236" target="_blank" class="facebook">Facbook <i class="fab fa-facebook"></i></a>
+    <a href=https://www.instagram.com/prasantsahu9821/" target="_blank" class="Instra">Instra <i class="fab fa-instagram"></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="Google">Google <i class="fab fa-google-plus"></i></a>
+    <a href="https://www.linkedin.com/in/vishal-sahu-8a9356186/" target="_blank" class="Linkedin">linkedin <i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/watch?v=IcydKu0M9JY" target="_blank" class="youtube">Youtube <i class="fab fa-youtube"></i></a>
+    <a href="https://twitter.com/vishals37429745" target="_blank" class="twitter">Twitter <i class="fab fa-twitter"></i></a>
+</div>
+
+
+
+
+<div class="backimg ">
+    <div class="profile animated jello">
+        <img src="images/fb.jpg" alt="">
+        <div class="profileText">
+            <h2>Vishal Sahu</h2>
+            <h3>Madhya Pradesh</h3>
+            <p>WEB DEVELOPER | MODEL</p>
+        </div>
+        <div class="profilefont">
+            <a href="https://www.facebook.com/profile.php?id=100005320203236" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/prasantsahu9821/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/vishal-sahu-8a9356186/" target="_blank"><i class="fab fa-linkedin-square fa-2x"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fab fa-google-plus-square fa-2x"></i></a>
+        </div>
+    </div>
+</div>
+
+<!--&lt;!&ndash; Main Footer &ndash;&gt;-->
+<footer class="main-footer">
+    <h3>Copyright &copy; 2019 , The Grate Profile</h3>
+    <p>All Rights Reserved</p>
+    <p>Developed & Maintained by
+        <a href="https://github.com/vishalsahu30081994" target="_blank">
+            <i class="fa fa-users"></i> Vishal Sahu
+        </a>
+    </p>
+</footer>
+
+<!--Main Footer-->
+<!--<footer class="main-part">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-8">-->
+                <!--<h3>Copyright &copy; 2019 , The Grate Profile</h3>-->
+                    <!--<p>All Rights Reserved</p>-->
+                    <!--<p>Developed & Maintained by-->
+                         <!--<a href="https://github.com/vishalsahu30081994" target="_blank">-->
+                        <!--<i class="fa fa-users"></i> Vishal Sahu-->
+                        <!--</a>-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+               <!--<h3>WhatSapp &copy; 2019</h3>-->
+            <!--</div>-->
+
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+</body>
+</html>

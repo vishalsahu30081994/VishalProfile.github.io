@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ------------------- Main Header ---------------- */
+.main-header{
+    background: white url("images/image5.jpeg") no-repeat scroll center;
+    padding: 12px;
+    color: white;
+    text-align: right;
+}
+
+/* ------------------- Main Navbar ---------------- */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav a:hover{
+    background-color: #be6347;
+    border-radius: 50px;
+    box-shadow: 0 0 5px gray;
+}
+.main-nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+}
+
+/*MAIN FOOTER*/
+.main-footer{
+    /*background-image: url("pexels-photo-1308624.jpeg");*/
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    /*margin: 0 0 15px;*/
+}
+.main-footer a{
+    color: orange;
+}

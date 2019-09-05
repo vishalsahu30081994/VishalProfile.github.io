@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cardo', serif;
+}
+.backimg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("pexels-photo-1308624.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.profile{
+    width: 400px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 30px 0;
+    border-radius: 10px;
+}
+img{
+    height: 250px;
+    border-radius: 70%;
+    margin-bottom: 20px;
+}
+.profileText{
+    margin-bottom: 20px;
+}
+.profileText h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.profileText h3{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+i{
+    color: white;
+}
+
+.main-footer{
+    background-image: url("pexels-photo-1308624.jpeg");
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    /*margin: 0 0 15px;*/
+}

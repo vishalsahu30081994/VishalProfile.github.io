@@ -1,0 +1,570 @@
+/* Add Your Styles Here */
+head{
+    font-family: fantasy;
+    text-shadow: #00e5ff;
+}
+.indexBody{
+    font-family: Arial, sans-serif, fantasy;
+    margin: 0;
+    background: rgb(4,106,146)url("../images/bg portrait tree.jpg") repeat ;
+
+}
+
+
+/* ------------------- Main Header ---------------- */
+#main-bar{
+    /*background: rgb(4,106,146)url("../images/home page.gif") no-repeat scroll center;*/
+
+    background: rgb(4,106,146)url("../images/home page.gif") no-repeat scroll center ;
+    height: 150px;
+    padding: 12px;
+    color: white;
+    text-align: right;
+}
+#title{
+    font-weight: bolder;
+    font-family:"Yu Gothic UI Semibold";
+    text-shadow: 0 0 30px black ;
+}
+
+/* ------------------- Main Navbar ---------------- */
+#main_nav{
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+    height: 60px;
+}
+#main_nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: auto;
+}
+#main_nav a:hover{
+    background-color: #be6347;
+    border-radius: 50px;
+    box-shadow: 0 0 5px gray;
+}
+#main_nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+}
+.main_nav_index{
+    /*background: linear-gradient(200deg,red,hotpink,blue,orangered,forestgreen,fuchsia);*/
+    /*background: rgb(4,106,146)url("../images/gradient4.jpg") round ;*/
+    background: linear-gradient(45deg,#be6347,black,#be6347);
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+    height: 60px;
+
+}
+.main_nav_index a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: auto;
+}
+.main_nav_index a:hover{
+    background-color: #be6347;
+    border-radius: 50px;
+    box-shadow: 0 0 5px gray;
+}
+.main_nav_index a.active{
+    background-color: darkred;
+    border-radius: 50px;
+}
+.list{
+    text-align: left;
+}
+.search_box{
+    margin-bottom:5px ;
+}
+
+
+/* ---------------- Home News Section ---------------- */
+{
+    background-image: white url("../images/music.gif") no-repeat scroll center;
+    padding: 15px;
+}
+/*.download{
+    height:30px;
+}*/
+.home-news-section{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.home-news-article{
+    border: 2px solid darkred;
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.5s;
+    background: linear-gradient(180deg,lightblue,lightgreen,wheat);
+}
+.home-news-article,#tablefree:hover{
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+.home-news-article h2{
+    color: darkred;
+}
+.home-news-article img{
+    width: 100%;
+}
+/*#free{
+    transition: ease-in-out ;
+}
+#signin{
+    transition: ease-in-out;
+}
+#upload{
+    transition:ease-in-out ;
+}*/
+/*-----------------------Buttons-------------*/
+#btn1,#btn4,#btn7,#btn3,#btn6,#btn9,#btn2,#btn5,#btn8{
+    border:1px dashed navajowhite;
+}
+#btn1,#btn4,#btn7{
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+#btn3,#btn6,#btn9 {
+    border-bottom-right-radius: 50%;
+    border-top-right-radius:50%;
+}
+#btn2,#btn5,#btn8{
+    border-radius: 70px;
+}
+
+#btn1:hover{
+    border:3px solid white;
+}
+#btn2:hover{
+    border:3px solid white;
+}
+#btn3:hover{
+    border:3px solid white;
+}
+#btn4:hover{
+    border:3px solid white;
+}
+#btn5:hover{
+    border:3px solid white;
+}
+#btn6:hover{
+    border:3px solid white;
+}
+#btn7:hover{
+    border: 3px solid white;
+}
+#btn8:hover{
+    border:3px solid white;
+}
+#btn9:hover{
+    border:3px solid white;
+}
+
+@media (max-width: 1100px) {
+    #btn1,#btn4,#btn7,#btn3,#btn6,#btn9,#btn2,#btn5,#btn8{
+       border-radius: 30px;
+    }
+}
+
+
+/* --------------------- Main News Section ----------------- */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+}
+.main-news-article{
+    text-align: center;
+}
+.audio_card_1,.audio_card_psycho{
+    border: 2px solid darkred;
+    border-radius: 20px;
+}
+
+.audio_card_1{
+    background: rgb(4,106,146)url("../images/bestcollection.jpg") round ;
+
+}
+.audio_card_psycho{
+    background: rgb(4,106,146)url("../images/psychoSaiyan.jpg") round ;
+
+}
+
+.hollywood_bg,.bollywood_bg,.devotional_bg{
+    background: rgb(4,106,146)url("../images/bg landscape1.jpg") round ;
+}
+
+.audio_card_2{
+    border-radius: 40px;
+    border : 2px solid white;
+    background: transparent;
+}
+
+.play_btn_2{
+    border-radius: 100px;
+
+}
+
+.audio_play_btn,.audio_play{
+    border-radius: 30px;
+    background-image: url("../images/bg sky.gif") ;
+    color: white;
+    font-size: x-large;
+    width: 150px;
+    height: 70px;
+}
+.audioPlayBtn{
+    border-radius: 30px;
+    color: white;
+    border: 2px solid wheat;
+    font-size: medium;
+    width: 200px;
+    height: 52px;
+    background-image: url("../images/bg sky.gif") ;
+}
+
+#playbtnsection3,#playbtnsection4{
+    border-radius: 30px;
+    color: white;
+    font-size: x-large;
+    width: 150px;
+    height: 80px;
+    background: transparent;
+}
+
+#audio_play_btn3,#audio_play_btn4{
+    background-image: url("../images/bg sky.gif") ;
+}
+#audio_play_btn5{
+    background-image: url("../images/bg sky.gif");
+}
+
+#video_playbtn1,#video_playbtn{
+    size: 20px;
+
+}
+.zoom{
+    width: 550px;
+    height: 374px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (min-width: 50px) {
+    .zoom{
+        width: 100px;
+        height: 60px;
+    }
+}
+@media (min-width: 250px) {
+    .zoom{
+        width: 150px;
+        height: 80px;
+    }
+}
+@media (min-width: 400px) {
+    .zoom{
+        width: 200px;
+        height: 150px;
+    }
+}
+@media (min-width: 500px) {
+    .zoom{
+        width: 300px;
+        height: 250px;
+    }
+}
+@media (min-width: 900px) {
+    .zoom{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media (min-width: 1100px) {
+    .zoom{
+        width: 600px;
+        height: 375px;
+    }
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+    overflow: hidden;
+    border: 5px solid lightblue;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    border: 5px solid lightpink;
+}
+
+/* ------------------ Main Footer -------------- */
+.main-footer{
+    background: linear-gradient(45deg,#be6347,black,#be6347);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+.main-footer a{
+    color: orange;
+}
+
+/* ----------------- News Page Section ---------------------- */
+.news-page-section{
+    width: 80%;
+    margin: auto;
+}
+.news-page-article{
+    margin: 20px 15px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+.news-page-heading{
+    background: linear-gradient(45deg,#be6347,black,#be6347);
+    padding: 20px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.news-page-heading h2{
+    margin: 0;
+}
+.news-page-body{
+    padding: 20px;
+}
+.news-page-body h3{
+    font-size: 18px;
+    color: #be6347;
+}
+.imagebox{
+    border:5px solid hotpink;
+    box-shadow:0 0 10px cornflowerblue ;
+}
+
+/* ------------- Video Songs Section -------------- */
+.gallery-section{
+    text-align: center;
+    margin: 10px;
+}
+
+.main-header{
+    background: rgb(4,106,146)url("../images/gradient1.jpg") round ;
+
+}
+.switch-button:{
+}
+.bollywood_video:hover{
+    border-radius: 30px;
+    border-left: 20px solid darkred;
+    border-right:20px solid darkred;
+
+}
+.hollywood_video:hover {
+    border-radius: 30px;
+    border-left: 20px solid darkred;
+    border-right:20px solid darkred;
+}
+.devotional_video:hover {
+    border-radius: 30px;
+    border-left: 20px solid darkred;
+    border-right:20px solid darkred;
+}
+fieldset{
+    border: 2px solid orangered;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 20px 10px;
+}
+legend {
+    background: linear-gradient(200deg,red,hotpink,blue,orangered,forestgreen,fuchsia);
+    color: white;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.categories:hover{
+    border: 2px solid white;
+}
+.categories{
+    border: 1px solid wheat;
+}
+
+.gallery-figure{
+    border: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    margin:5px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-figure,legend:hover{
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    legend{
+       height:80px;
+    }
+}
+.video-download{
+    width: 80%;
+    align-items: center;
+}
+sub{
+    color: red;
+    font-size:x-small;
+}
+.video-element{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid lightcoral;
+    video-fluid;
+
+}
+@media (min-width: 770px) {
+    .video-element,#video1,#video2{
+        width: 160px;
+    }
+}
+
+@media (min-width: 800px) {
+    .video-element,#video1,#video2{
+        width: 170px;
+    }
+}
+@media (min-width: 900px) {
+    .video-element,#video1,#video2{
+        width: 200px;
+    }
+}
+@media (min-width: 1100px) {
+    .video-element,#video1,#video2{
+        width: 250px;
+    }
+}
+@media (min-width: 1300px) {
+    .video-element,#video1,#video2{
+        width: 300px;
+    }
+}
+
+.video-details{
+    align-items: center;
+}
+.video-card{
+    border: 2px solid darkred;
+    box-shadow: 0 0 10px darkred;
+    align-items: center;
+    margin: 5px;
+}
+.video-example{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid lightcoral;
+    margin: 5px;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+.gallery-figure figcaption{
+    padding: 10px;
+    color: darkred;
+}
+
+/* --------------- About Section -------------- */
+.movie-section{
+    width: 95%;
+    margin: auto;
+}
+
+
+/* ----------------- Contact Section -------------- */
+.contact-section{
+    background: white url("../images/headphone.gif") no-repeat scroll bottom;
+    padding: 15px;
+}
+.contact-article{
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px #ba9e82;
+    border-radius: 10px;
+}
+.contact-article h2{
+    color: lightgray;
+}
+.input-field{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    background: transparent;
+    border-bottom: 3px solid #8b7661;
+    width: 200px;
+    color: white;
+}
+.contact-form textarea{
+    border: 3px solid #8b7661;
+    outline: none;
+    background: transparent;
+    margin: 5px;
+    width: 180px;
+    color: white;
+    border-radius: 10px;
+}
+.contact-form textarea:focus{
+    border: 3px solid #ba9e82;
+}
+::placeholder{
+    color: lightgray;
+}
+.input-field:focus{
+    border-bottom: 3px solid #ba9e82;
+}
+#submit-btn{
+    background-color: #574937;
+    color: white;
+    margin: 15px 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    width: 150px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+#submit-btn:hover{
+    background-color: #8b7661;
+    cursor: pointer;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1HOME.HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NAVBAR.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Cardo', serif;
+        }
+        .backimg{
+            width: 100%;
+            height: 100vh;
+            background-image: url("pexels-photo-1308624.jpeg");
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .profile{
+            width: 400px;
+            background-color: rgba(0,0,0,0.3);
+            padding: 30px 0;
+            border-radius: 10px;
+        }
+        img{
+            height: 250px;
+            border-radius: 70%;
+            margin-bottom: 20px;
+        }
+        .profileText{
+            margin-bottom: 20px;
+        }
+        .profileText h2{
+            font-size: 2em;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        .profileText h3{
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        i{
+            color: white;
+        }
+
+        .main-footer{
+            background-image: url("pexels-photo-1308624.jpeg");
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            /*margin: 0 0 15px;*/
+        }
+    </style>
+</head>
+<body>
+
+<!--NAVBAR-->
+<!--DROPDOWN NAVBAR-->
+<nav>
+    <ul>
+        <li>
+            <a href="#"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+            <a href="#"><i></i>About Us</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">Skill's <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown_list">
+                <a href="#"><i class="fa fa-coffee"></i>Core Java</a>
+                <a href="#"><i class="fa fa-coffee"></i>Advance Java</a>
+                <a href="#">Testing</a>
+                <a href="#"><i class="fa fa-image"></i>Ui Developer</a>
+                <a href="#">Full Stack</a>
+                <a href="#"><i class="fa fa-cog"></i>Other</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Game's<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown_list">
+                <a href="#">PC-Game</a>
+                <a href="#">PS-2-Game</a>
+                <a href="#">Mobile-Game</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Gellary<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown_list">
+                <a href="#">Photo</a>
+                <a href="#">Song's</a>
+                <a href="#">Movie's</a>
+                <a href="#">Mp3</a>
+                <a href="#">Vedio</a>
+                <a href="#">Punjabi</a>
+                <a href="#">Telgu</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Business<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown_list">
+                <a href="#">Self</a>
+                <a href="#">Contractor</a>
+                <a href="#">Transport</a>
+                <a href="#">All State Work</a>
+                <a href="#">USA</a>
+                <a href="#">India</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-graduation-cap"></i>Careers</a>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-envelope"></i>Contact Us</a>
+        </li>
+    </ul>
+</nav>
+<!--AND NAVBAR-->
+
+<div class="backimg">
+    <div class="profile">
+        <img src="images/fb.jpg" alt="">
+        <div class="profileText">
+            <h2>Vishal Sahu</h2>
+            <h3>Madhya Pradesh</h3>
+            <p>WEB DEVELOPER | MODEL</p>
+        </div>
+        <div class="profilefont">
+            <a href="https://www.facebook.com/profile.php?id=100005320203236"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Main Footer -->
+<footer class="main-footer">
+    <h3>Copyright &copy; 2019 , Self State Transport's</h3>
+    <p>All Rights Reserved</p>
+    <p>Developed & Maintained by
+        <a href="https://github.com/vishalsahu30081994" target="_blank">
+            <i class="fa fa-users"></i> Self State Transport's
+        </a>
+    </p>
+</footer>
+</body>
+</html>

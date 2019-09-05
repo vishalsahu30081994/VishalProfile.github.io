@@ -1,0 +1,107 @@
+body{
+    font-family: Arial sans-serif;
+    margin: 0;
+}
+/* ------------------- Main Header ---------------- */
+.main-header{
+    background: white url("images/image5.jpeg") no-repeat scroll center;
+    padding: 12px;
+    color: white;
+    text-align: right;
+}
+/* ------------------- Main Navbar ---------------- */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+}
+/* ---------------- Home News Section ---------------- */
+.home-news-section{
+    text-align: center;
+    margin-top: 10px;
+}
+.home-news-article{
+    border: 2px solid darkred;
+    width: 330px;
+    height: 500px;
+    display: inline-grid;
+    margin: 5px;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.5s;
+}
+
+.home-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+.home-news-article h2{
+    color: darkred;
+}
+.home-news-article img{
+    width: 100%;
+}
+
+/* --------------------- Main News Section ----------------- */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+}
+.main-news-article{
+    text-align: center;
+}
+.main-news-article h2{
+    background: linear-gradient(45deg,#be6347,black,#be6347);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+}
+.main-news-article p{
+    color: #be6347;
+    font-size: 18px;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+.main-footer{
+    background-image: url("pexels-photo-1308624.jpeg");
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0 0 15px;
+}

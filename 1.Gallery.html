@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-5.8.2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="NAVBAR_NEW.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url("pexels-photo-1308624.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+            padding: 30px 0;
+            }
+
+                    nav{
+                        background-color: black;
+                        color: white;
+                        overflow: hidden;
+                        padding: 10px;
+                        margin: 0px;
+                    }
+                    nav ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    nav ul li{
+                        float: left;
+                    }
+                    nav ul li a{
+                        text-decoration: none;
+                        color: white;
+                        padding: 14px 25px;
+                        display: inline-block;
+                    }
+                    nav ul li a:hover{
+                        background-color: blue;
+                        color: white;
+                    }
+                    .dropdown_list{
+                        background-color: black;
+                        position: absolute;
+                        display: none; /*to hide gone */
+        }
+        .dropdown_list a{
+            display: block;
+        }
+        /*dropdown hover effect*/
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+
+        /*START*/
+        .container{
+            width: 1280px;
+            min-height: 50px;
+            /*background: #fff;*/
+            background: #000E14;
+            margin: 70px auto 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .container .box{
+            position: relative;
+            width: 350px;
+
+            /*width: 250px;*/
+            /*height: 250px;*/
+            background: #ff0;
+            margin: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+
+        }
+        .container .box .imgbox{
+            position: relative;
+            overflow: hidden;
+        }
+        .container .box .imgbox img{
+            max-width: 100%;
+           transition: transform 2s;
+        }
+        .container .box:hover .imgbox img{
+            transform: scale(1.2);
+        }
+        .container .box .details{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            transform: scaleY(0);
+            transition: transform .5s;
+        }
+        .container .box:hover .details{
+            transform: scaleY(1);
+        }
+        .container .box .details .content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+        }
+        .content .box .details .content h2{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: #ff0;
+        }
+
+        .content .box .details .content p{
+            margin: 10px 0 0;
+            padding: 0;
+            /*font-size: 20px;*/
+            /*color: #ff0;*/
+        }
+        .main-footer{
+            background-image: url("pexels-photo-1308624.jpeg");
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            /*margin: 0 0 15px;*/
+        }
+        .home{
+            font-family: "Comic Sans MS", sans-serif;
+            background: white url("pexels-photo-1308624.jpeg") no-repeat scroll bottom;
+            background-size: cover;
+            font-size: 25px;
+            border: 2px solid black;
+            width: 300px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            margin: 20px 0 20px 0;
+            margin: auto;
+            box-shadow: 0 0 15px black;
+            border-radius: 15px;
+        }
+        .home2{
+            font-family: "Comic Sans MS", sans-serif;
+            background: white url("pexels-photo-1308624.jpeg") no-repeat scroll bottom;
+            background-size: cover;
+            font-size: 25px;
+            border: 2px solid black;
+            width: 350px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            margin: 20px 0 20px 0;
+            margin: auto;
+            box-shadow: 0 0 15px black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!--NavBAR-->
+<!--DROPDOWN NAVBAR-->
+<!-- Main Header -->
+<header class="main-header">
+    <h3 class="animated slideInRight">The Great Profile</h3>
+</header>
+
+<!-- Main Navbar -->
+<nav class="main-nav">
+    <div class="animated slideInLeft">
+        <a href="i.html" >
+            <i class="fa fa-home"></i> Home</a>
+        <a href="About.html">
+            <i class="fa fa-credit-card"></i> About Us</a>
+        <a href="1.Gallery.html" class="active">
+            <i class="fa fa-music"></i> Gallery</a>
+        <a href="1GAME'S.html">
+            <i class="fa fa-id-card"></i> Game's</a>
+        <a href="Contact.html">
+            <i class="fa fa-envelope"></i> Contact Us</a>
+    </div>
+</nav>
+<hr>
+
+
+<!--HOME SECTION-->
+
+<div class="home animated slideInUp">
+    <h1 align="center"><i class="fa fa-music" aria-hidden="true"></i>Gallery<i class="fa fa-music" aria-hidden="true"></i></h1>
+</div>
+
+<div class="container animated jello">
+    <div class="box">
+        <div class="imgbox">
+             <img src="images/fb.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+            <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb11.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb5.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb8.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb5.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb6.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb7.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb9.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgbox">
+            <img src="images/fb7.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>What is lorem</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aperiam at autem
+                    consectetur ducimus explicabo
+                    in nobis odio, sit tenetur vel.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--MY MUSIC PLAYER's PURE JAVA SCRIPT-->
+<!--START-->
+<hr>
+<div class="home2 animated slideInUp">
+<h1><i class="fa fa-music" aria-hidden="true"></i>My Music Player <i class="fa fa-music" aria-hidden="true"></i></h1>
+</div>
+<br>
+<main class="animated jello">
+    <div class="a song">a</div>
+    <div class="b song">b</div>
+    <div class="c song">c</div>
+
+    <div class="d song">d</div>
+    <div class="e song">e</div>
+    <div class="f song">f</div>
+
+    <div class="g song">g</div>
+    <div class="h song">h</div>
+    <div class="i song">i</div>
+
+</main>
+
+
+
+
+
+
+<!-- Main Footer -->
+<footer class="main-footer">
+    <h3>Copyright &copy; 2019 , The Grate Profile</h3>
+    <p>All Rights Reserved</p>
+    <p>Developed & Maintained by
+        <a href="https://github.com/vishalsahu30081994" target="_blank">
+            <i class="fa fa-users"></i> Vishal Sahu
+        </a>
+    </p>
+</footer>
+
+<script>
+    var divlength = document.querySelectorAll('.song').length;
+    console.log(divlength);
+
+    for( var i=0; i<divlength; i++){
+        var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+
+        var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+    }
+
+    var song1 = new Audio();
+    song1.src = "music/audio1.mp3";
+
+    var song2 = new Audio();
+    song2.src = "music/audio2.mp3";
+
+    var song3 = new Audio();
+    song3.src = "music/audio3.mp3";
+
+    function playsong() {
+        // alert("Hello All :) ");
+        // song1.play();
+        // console.log(this);
+        // console.log(this.innerHTML);
+
+        var songId = this.innerHTML;
+        console.log(songId);
+
+        switch (songId){
+            case "a":
+                //statement_1
+                song1.play();
+                break;
+
+            case "b":
+                song2.play();
+                break;
+
+            case "c":
+                song3.play();
+                break;
+
+            case "d":
+                //statement_1
+                song1.play();
+                break;
+
+            case "e":
+                song2.play();
+                break;
+
+            case "f":
+                song3.play();
+                break;
+
+            case "g":
+                //statement_1
+                song1.play();
+                break;
+
+            case "h":
+                song2.play();
+                break;
+
+            case "i":
+                song3.play();
+                break;
+
+            default:
+                //statement_def
+                console.log("Rong Input");
+                break;
+        }
+    }
+
+    function pausesong() {
+        // alert("pause function is called")
+        var songId = this.innerHTML;
+        console.log(songId);
+
+        switch (songId) {
+            case "a":
+                //statement_1
+                song1.pause();
+                break;
+
+            case "b":
+                song2.pause();
+                break;
+
+            case "c":
+                song3.pause();
+                break;
+
+            case "d":
+                //statement_1
+                song1.pause();
+                break;
+
+            case "e":
+                song2.pause();
+                break;
+
+            case "f":
+                song3.pause();
+                break;
+
+            case "g":
+                //statement_1
+                song1.pause();
+                break;
+
+            case "h":
+                song2.pause();
+                break;
+
+            case "i":
+                song3.pause();
+                break;
+
+            default:
+                //statement_def
+                console.log("Rong Input");
+                break;
+        }
+    }
+    //if i double click it must show alert ;; let see
+    //perfect like share btnta hai
+</script>
+</body>
+</html>
